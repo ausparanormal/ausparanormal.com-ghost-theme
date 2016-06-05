@@ -1,0 +1,168 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+h1, h2, h3, h4, h5, .brand-logo{
+    font-family: 'Josefin Slab', serif;
+}
+
+p, nav ul {
+    font-family: 'Merriweather', serif;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+
+
+.main-container {
+    /*background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/background.jpg);*/
+    background-size: cover;
+    background-position: top center;
+}
+
+.index-banner {
+    min-height: 100vh;
+    margin-top: -16px;
+
+}
+#index-info-row {
+    padding-top: 20px;
+}
+.kaz-dark-blue {
+    background-color: #13293D;
+}
+
+.text-kaz-dark-blue {
+    color: #13293D;
+}
+
+.kaz-blue-blue {
+    background-color: #006494;
+}
+
+.text-kaz-blue-blue {
+    color: #006494;
+}
+
+.kaz-teal {
+    background-color: #247BA0;
+}
+
+.text-kaz-teal {
+    color: #247BA0;
+}
+
+.kaz-light-blue {
+    background-color: #1b98e0;
+}
+
+.text-kaz-light-blue {
+    color: #1b98e0;
+}
+
+.kaz-white {
+    background-color: #e8f1f2;
+}
+
+.text-kaz-white {
+    color: #e8f1f2;
+}
+
+.logo-main-group {
+
+}
+
+footer.page-footer {
+    margin-top: 0;
+}
+
+.contact-container {
+    height: 100%;
+}
+
+
+
+/* label color */
+.input-field label {
+    color: #e8f1f2;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #1565c0;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #1565c0;
+    box-shadow: 0 1px 0 0 #1565c0;
+}
+/* label focus color */
+.input-field input[type=email]:focus + label {
+    color: #1565c0;
+}
+/* label underline focus color */
+.input-field input[type=email]:focus {
+    border-bottom: 1px solid #1565c0;
+    box-shadow: 0 1px 0 0 #1565c0;
+}
+
+/* label focus color */
+.input-field textarea[type=textarea]:focus + label {
+    color: #1565c0;
+}
+/* label underline focus color */
+.input-field textarea[type=textarea]:focus {
+    border-bottom: 1px solid #1565c0;
+    box-shadow: 0 1px 0 0 #1565c0;
+}
+/* label focus color */
+label.active {
+    color: #1565c0;
+}
+
+#modal-content {
+    display: inline-block;
+}
+
+.g-recaptcha {
+    transform:scale(0.80);
+    transform-origin:0;
+    -webkit-transform:scale(0.80);
+    transform:scale(0.80);
+    -webkit-transform-origin:0 0;
+    transform-origin:0 0;
+}
+
+.post h2 {
+    margin: 0;
+}
+
+.card-content img {
+    max-width: 100%;
+    height:auto;
+
+}
+
+.chip i.material-icons {
+    cursor: auto;
+}
+
+.card-content a {
+  color: #e51c23 !important;
+}

@@ -1,0 +1,16 @@
+<nav class="black" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo red-text text-darken-3">Aus<span class="white-text">Paranormal</span></a>
+        <ul class="right hide-on-med-and-down">
+          	{{#foreach navigation}}
+        		<li class="nav-{{slug}}{{#if current}} nav-current{{/if}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        	{{/foreach}}
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+            {{#foreach navigation}}
+        		<li class="nav-{{slug}}{{#if current}} nav-current{{/if}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        	{{/foreach}}
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+</nav>

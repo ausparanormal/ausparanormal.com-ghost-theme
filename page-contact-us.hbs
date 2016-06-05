@@ -1,0 +1,73 @@
+{{!< default}}
+<div class="contact-container grey darken-4">
+        <div class="container index-banner">
+
+                
+                    {{#post}}
+                    <article class="{{post_class}}">
+                        <!--<div class="card grey darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title"><h5>Contact Form</h5></span>
+                                <form class="col s12" action="/messagesend" method="post">
+                                    <div class="row">
+                                        <br>
+                                        <div class="input-field col s6">
+                                            <input name="first_name" id="first_name" type="text" class="validate">
+                                            <label for="first_name"><p>First Name</p></label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <input name="last_name" id="last_name" type="text" class="validate">
+                                            <label for="last_name"><p>Last Name</p></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <select>
+                                                <option value="" disabled selected>Choose your option</option>
+                                                <option value="Investigation">Investigation Request</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                            <label>Type of Enquiry</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="email" id="email" type="email" class="validate">
+                                            <label for="email"><p>Email</p></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea name="message" id="textarea1" type="textarea" class="materialize-textarea"></textarea>
+                                            <label for="textarea1"><p>Message</p></label>
+                                        </div>
+                                    </div>
+                                    <div class="card-action">
+                                        <!-- Modal Trigger -->
+                                        <!--<button class="modal-trigger btn waves-effect waves-light red darken-3 text-kaz-white" href="#modal1">Send</button>
+                                    </div>
+                                    <!-- Modal Structure -->
+                                    <!--<div id="modal1" class="modal">
+                                        <div class="modal-content grey darken-1 center">
+                                            <h4>Wait a Minute!</h4>
+                                            <p>We Need to make sure you are human!</p>
+                                            <br>
+                                            <div class="g-recaptcha" data-sitekey="6LclfwsTAAAAAF3s7_qhkbl2A6GhulmcQgncsFxW"></div>
+                                        </div>
+                                        <div class="modal-footer grey darken-1">
+                                            <button class="modal-action modal-close btn waves-effect waves-light red darken-3 text-kaz-white" type="submit">Send</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                        </div>-->
+                            <section class="post-content">
+                                {{content}}
+                            </section>
+
+                        </article>
+                        {{/post}}
+
+        </div>
+    </div>

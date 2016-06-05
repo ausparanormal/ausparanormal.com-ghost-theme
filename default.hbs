@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="{{asset "/css/materialize.css"}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="{{asset "/css/style.css"}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+	<link href="{{asset "/css/materialdesignicons.min.css"}}" media="all" rel="stylesheet" type="text/css" />
+
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab|Merriweather' rel='stylesheet' type='text/css'>
+
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}} nav-closed">
+<main>
+<!--Menu Item
+<% include nav.ejs %>
+-->
+    {{navigation}}
+	<div class="section no-pad-bot grey darken-4 main-container" {{#if @blog.cover}}style="background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url({{@blog.cover}})"{{/if}}>
+
+	{{{body}}}
+        
+    </div>
+</main>
+<footer class="pin-bottom page-footer red darken-4">
+    <div class="row container">
+        <div class=" center-on-small-only">
+            {{#if @blog.facebook}}<a href="{{@blog.facebook}}"><i class="mdi mdi-facebook white-text small"></i></a>{{/if}}
+            {{#if @blog.twitter}}<a href="{{@blog.twitter}}"><i class="mdi mdi-twitter white-text small"></i></a>{{/if}}
+            <a href="https://plus.google.com/113072497423275321054"><i class="mdi mdi-google-plus white-text small"></i></a>
+            <a href="https://www.youtube.com/channel/UCHvyNKa_H4vjjdhMorqFGYg"><i class="mdi mdi-youtube-play white-text small"></i></a>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container row center-on-small-only">
+            &copy; 2016 <a class="text-kaz-white" href="http://ausparanormal.com"> Australian Paranormal Investigation Unit</a>
+        </div>
+    </div>
+</footer>
+<!--<% include footer.ejs %>
+<% include scripts.ejs %>-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="{{asset "js/materialize.js"}}"></script>
+<script src="{{asset "js/init.js"}}"></script>
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+</body>
+</html>
